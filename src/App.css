@@ -1,38 +1,85 @@
+
+
 .App {
+  background-color: aqua;
+  text-align: center;
+  height: 100vh;
+  width: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+
+}
+.App h1{
+  background-image: url("/src/jps.png.png");
+  background-size: cover;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 3rem;
+
+}
+input {
+  border-radius: 10px;
+  box-shadow: 5px 10px 12px black;
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  width: 40%;
+}
+
+button {
+  background: rgb(167, 167, 167);
+  padding: 10px;
+  width: 100px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  
+}
+
+button:hover {
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  transform: scale(1.1);
+}
+
+form{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: row; */
+ 
+}
+
+.mmk{
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  margin: auto;
+  border: 1px solid rgb(0, 0, 0);
+  width: 300px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  row-gap: 50px;
+  
+}
+.fgh{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.dds{
+  background-color: blueviolet;
+  height: 100%;
+  width: 200%;
+  border: 1px solid black;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dds Todoform{
+  row-gap: 40px;
 }
